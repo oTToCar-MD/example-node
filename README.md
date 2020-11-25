@@ -1,2 +1,5 @@
 # example-node
-Example project using STM32 F1 / F4 firmware that uses C++17, UAVCAN v0, CubeHAL / CubeMX
+
+Example project for [uavcan-stm32-cubehal-base](https://github.com/oTToCar-MD/uavcan-stm32-cubehal-base).
+
+**Make sure to clone with --recursive**
