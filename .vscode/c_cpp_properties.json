@@ -4,14 +4,23 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/dsdlc_generated",
-                "${workspaceFolder}/bus-node-base/inc",
-                "${workspaceFolder}/bus-node-base/libuavcan/libuavcan/include",
-                "${workspaceFolder}/bus-node-base/uavcan_platform_specific_components/stm32/libuavcan/driver/include",
-                "${workspaceFolder}/bus-node-base/libopencm3/include"
+                "${workspaceFolder}/uavcan-stm32-cubehal-base/inc",
+                "${workspaceFolder}/uavcan-stm32-cubehal-base/libuavcan/libuavcan/include",
+                "${workspaceFolder}/uavcan-stm32-cubehal-base/platform_specific_components/stm32/libuavcan/driver/include",
+                "${workspaceFolder}/example-node.cubemx/Core/Inc",
+                "${workspaceFolder}/example-node.cubemx/Drivers/STM32F1xx_HAL_Driver/Inc",
+                "${workspaceFolder}/example-node.cubemx/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+                "${workspaceFolder}/example-node.cubemx/Middlewares/Third_Party/FreeRTOS/Source/include",
+                "${workspaceFolder}/example-node.cubemx/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+                "${workspaceFolder}/example-node.cubemx/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3",
+                "${workspaceFolder}/example-node.cubemx/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                "${workspaceFolder}/example-node.cubemx/Drivers/CMSIS/Include"
             ],
             "defines": [
                 "${STM32_FAMILY}",
-                "UAVCAN_CPP_VERSION=UAVCAN_CPP11"
+                "UAVCAN_CPP_VERSION=UAVCAN_CPP11",
+                "USE_HAL_DRIVER",
+                "STM32F103xE"
             ],
             "compilerPath": "arm-none-eabi-gcc",
             "cStandard": "c11",
