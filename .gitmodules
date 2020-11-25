@@ -1,0 +1,3 @@
+[submodule "uavcan-stm32-cubehal-base"]
+	path = uavcan-stm32-cubehal-base
+	url = git@github.com:oTToCar-MD/uavcan-stm32-cubehal-base.git
