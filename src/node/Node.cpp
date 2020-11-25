@@ -6,8 +6,10 @@
 #include "uavcan/uavcan.hpp"
 #include <node/Node.hpp>
 #include <uavcan-stm32-cubehal-base/node.hpp>
+#include <ottocar/protocol/GetBuildInformation.hpp>
 
 using base::NodeLocker;
+using namespace ottocar::protocol;
 
 namespace example_node
 {
@@ -64,7 +66,7 @@ void Node::run()
     }
 
     // build info server
-    uavcan::ServiceServer<GetBuildInformation> buildInfoServer{node};
+    uavcan::ServiceServer<ottocar::protocol::GetBuildInformation> buildInfoServer{node};
     buildInfoServer.start(
         [](const uavcan::ReceivedDataStructure<GetBuildInformation::Request> &request,
            GetBuildInformation::Response &response) {
